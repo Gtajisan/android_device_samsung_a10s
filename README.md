@@ -19,4 +19,4 @@ Release Month | August 2019
  
 ![Samsung Galaxy A10s](https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-a10s-1.jpg "Samsung Galaxy A10s")
 
-Based on A107FXXU8BUC2 Firmware
+Based on A107FXXS8CWD3 Firmware
