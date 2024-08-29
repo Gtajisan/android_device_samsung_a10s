@@ -7,6 +7,9 @@
 # Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
+# Inherit some stuff
+$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
@@ -14,6 +17,14 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1520
 TARGET_SCREEN_WIDTH := 720
+
+# SamsungAdvancedDisplay
+PRODUCT_PACKAGES += \
+    AdvancedDisplay \
+
+# SamsungDoze
+PRODUCT_PACKAGES += \
+    SamsungDoze \
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -70,6 +81,12 @@ PRODUCT_PACKAGES += \
     libdrmclearkeyplugin \
     libmockdrmcryptoplugin
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.face@1.0.vendor \
+    android.hardware.biometrics.fingerprint@2.1.vendor \
+    android.hardware.biometrics.fingerprint-service.samsung \
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
@@ -83,6 +100,10 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder \
     libhwbinder.vendor
+
+# VNDK
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v30/arm/arch-arm-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libutils-v30.so
 
 # Keymaster
 PRODUCT_PACKAGES += \
