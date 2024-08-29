@@ -69,7 +69,7 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := r428724
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-$(TARGET_KERNEL_CLANG_VERSION)
 TARGET_KERNEL_VERSION := 4.19
-TARGET_KERNEL_CONFIG := a10s_defconfig
+TARGET_KERNEL_CONFIG := lineage_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/a10s
 
 # Keymaster
