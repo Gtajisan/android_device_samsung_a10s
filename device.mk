@@ -73,6 +73,11 @@ PRODUCT_PACKAGES += \
     libdrmclearkeyplugin \
     libmockdrmcryptoplugin
 
+# Display
+PRODUCT_PACKAGES += \
+    libhwc2on1adapter \
+    libhwc2onfbadapter
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.face@1.0.vendor \
@@ -106,6 +111,10 @@ PRODUCT_PACKAGES += \
 # Libxml2
 PRODUCT_PACKAGES += \
     libxml2.vendor
+
+# Light
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.a10s
 
 # Fastbootd
 PRODUCT_PACKAGES += \
@@ -181,14 +190,21 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
-# Rootdir
+# Ramdisk
 PRODUCT_PACKAGES += \
-    fstab.mt6765 \
     init.connectivity.rc \
     init.modem.rc \
     init.mt6765.rc \
     init.mt6765.usb.rc \
     init.sensor_1_0.rc \
+    fstab.mt6765 \
+    fstab.mt6765_ramdisk \
+    ueventd.mt6765.rc
+
+PRODUCT_PACKAGES += \
+    init.recovery.mt6765.rc \
+    init.recovery.mt6762.rc \
+    init.recovery.usb.rc
 
 # Renderscript
 PRODUCT_PACKAGES += \
@@ -235,11 +251,23 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
     android.hardware.vibrator@1.0-service
 
+# WiFi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.3.vendor \
+    android.hardware.wifi.supplicant@1.2.vendor \
+    android.hardware.wifi.hostapd@1.1.vendor
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
+    $(LOCAL_PATH)/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
+    $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/samsung \
-    hardware/mediatek
+    hardware/mediatek \
+    device/mediatek/sepolicy_vndr
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/samsung/a10s/a10s-vendor.mk)
