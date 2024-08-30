@@ -1,5 +1,5 @@
-ro.omc.build.id=52303980
-ro.omc.build.version=A107FOXM8CVE3
-ro.omc.changetype=DATA_RESET_ON,TRUE
-ro.omc.disabler=FALSE
-ro.simbased.changetype=NO_DFLT_CSC,OMC
+# Heap
+ro.af.client_heap_size_kbyte=7168
+
+# Media
+media.stagefright.audio.deep=false
