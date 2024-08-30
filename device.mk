@@ -18,14 +18,6 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 TARGET_SCREEN_HEIGHT := 1520
 TARGET_SCREEN_WIDTH := 720
 
-# SamsungAdvancedDisplay
-PRODUCT_PACKAGES += \
-    AdvancedDisplay \
-
-# SamsungDoze
-PRODUCT_PACKAGES += \
-    SamsungDoze \
-
 # Audio
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
@@ -85,7 +77,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.face@1.0.vendor \
     android.hardware.biometrics.fingerprint@2.1.vendor \
-    android.hardware.biometrics.fingerprint-service.samsung \
 
 # Health
 PRODUCT_PACKAGES += \
@@ -107,7 +98,7 @@ PRODUCT_COPY_FILES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@3.0-service.samsung \
+    android.hardware.keymaster@3.0-service \
     android.hardware.keymaster@3.0-impl \
     libkeystore-engine-wifi-hidl \
     libkeystore-wifi-hidl
@@ -192,29 +183,12 @@ PRODUCT_COPY_FILES += \
 
 # Rootdir
 PRODUCT_PACKAGES += \
-
-PRODUCT_PACKAGES += \
     fstab.mt6765 \
-    factory_init.connectivity.rc \
-    factory_init.project.rc \
-    factory_init.rc \
-    init.aee.rc \
-    init.ago.rc \
     init.connectivity.rc \
     init.modem.rc \
-    init.mt6762.rc \
     init.mt6765.rc \
     init.mt6765.usb.rc \
-    init.project.rc \
     init.sensor_1_0.rc \
-    meta_init.connectivity.rc \
-    meta_init.modem.rc \
-    meta_init.project.rc \
-    meta_init.rc \
-    multi_init.rc \
-    init.recovery.mt6762.rc \
-    init.recovery.mt6765.rc \
-    init.recovery.samsung.rc \
 
 # Renderscript
 PRODUCT_PACKAGES += \
