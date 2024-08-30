@@ -112,10 +112,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libxml2.vendor
 
-# Light
-PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.a10s
-
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
