@@ -216,10 +216,6 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.3.vendor \
     android.hardware.radio@1.4.vendor
 
-# USB
-PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service.basic
-
 # BPF
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.ebpf.supported=false \
