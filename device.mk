@@ -78,6 +78,14 @@ PRODUCT_PACKAGES += \
     libhwc2on1adapter \
     libhwc2onfbadapter
 
+# SamsungAdvancedDisplay
+PRODUCT_PACKAGES += \
+    AdvancedDisplay \
+
+# SamsungDoze
+PRODUCT_PACKAGES += \
+    SamsungDoze \
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.face@1.0.vendor \
