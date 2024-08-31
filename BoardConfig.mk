@@ -150,7 +150,7 @@ BOARD_VNDK_VERSION := current
 
 # VINTF
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    vintf/mediatek_framework_compatibility_matrix.xml \
+    hardware/mediatek/vintf/mediatek_framework_compatibility_matrix.xml \
     hardware/samsung/vintf/samsung_framework_compatibility_matrix.xml \
     vendor/lineage/config/device_framework_matrix.xml \
 
