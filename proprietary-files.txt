@@ -542,9 +542,7 @@ vendor/bin/stp_dump3
 vendor/bin/thermal
 vendor/bin/thermal_manager
 vendor/bin/thermalloadalgod
-vendor/bin/vaultkeeperd
 vendor/bin/vendor.samsung.hardware.security.engmode@1.0-service
-vendor/bin/vendor.samsung.hardware.security.vaultkeeper@2.0-service
 vendor/bin/vendor.samsung.hardware.security.widevine.keyprov@1.0-service
 vendor/bin/wifiver_info
 vendor/bin/wlan_assistant
@@ -785,7 +783,6 @@ vendor/etc/init/networksetting.rc
 vendor/etc/init/nvram_daemon.rc
 vendor/etc/init/tee.rc
 vendor/etc/init/trustonic.rc
-vendor/etc/init/vaultkeeper_common.rc
 vendor/etc/init/vendor.mediatek.hardware.gpu@1.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc
 vendor/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc
@@ -1006,13 +1003,6 @@ vendor/etc/security/cacerts/fb5fa911.0
 vendor/etc/security/cacerts/fd08c599.0
 vendor/etc/security/cacerts/fde84897.0
 vendor/etc/vintf/manifest/android.hardware.gpu@1.0-service.xml
-vendor/etc/vintf/manifest/engmode_manifest.xml
-vendor/etc/vintf/manifest/hyper-default-sec.xml
-vendor/etc/vintf/manifest/lights-default-sec.xml
-vendor/etc/vintf/manifest/manifest.xml
-vendor/etc/vintf/manifest/power-default.xml
-vendor/etc/vintf/manifest/sec_c2_manifest_default.xml
-vendor/etc/vintf/manifest/vaultkeeper_manifest.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.hqm@1.0-manifest.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.thermal@1.0-manifest.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.wifi.hostapd.xml
@@ -1484,7 +1474,6 @@ vendor/lib/vendor.samsung.hardware.radio@2.0.so
 vendor/lib/vendor.samsung.hardware.radio@2.1.so
 vendor/lib/vendor.samsung.hardware.security.drk@2.0.so
 vendor/lib/vendor.samsung.hardware.security.engmode@1.0.so
-vendor/lib/vendor.samsung.hardware.security.vaultkeeper@2.0.so
 vendor/lib/vendor.samsung.hardware.security.widevine.keyprov@1.0.so
 vendor/lib/vendor.samsung.hardware.sysinput@1.0.so
 vendor/lib/vendor.samsung.hardware.sysinput@1.1.so
@@ -1498,11 +1487,3 @@ vendor/lib/vendor.sw.swfingerprint@1.0.so
 vendor/lib/wosface.hardware.biometrics.face@1.0.so
 vendor/lib64/hw/fpsensor_fingerprint.default.so
 vendor/lib64/libulk_ancbase.so
-vendor/res/images/lcd_test_00.png
-vendor/res/images/lcd_test_01.png
-vendor/res/images/lcd_test_02.png
-vendor/res/sound/ringtone.wav
-vendor/res/sound/testpattern1.wav
-vendor/ro.prop
-vendor/rw.prop
-vendor/ueventd.rc
