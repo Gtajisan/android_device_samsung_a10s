@@ -112,6 +112,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libxml2.vendor
 
+# Light
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.a10s
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
@@ -237,6 +241,11 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0.vendor
+
+
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service.basic
 
 # Vibrator
 PRODUCT_PACKAGES += \
